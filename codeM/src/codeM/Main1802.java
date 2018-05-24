@@ -1,6 +1,7 @@
 package codeM;
 
 import java.util.Scanner;
+//小美锦标赛题
 
 public class Main1802 {
 	public static void main(String[] args) {
