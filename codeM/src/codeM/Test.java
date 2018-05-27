@@ -6,6 +6,8 @@ public class Test {
 		public static int ss;
 		
 	    public static void main(String[] args) {
+	    	System.out.println(9/5);
+	    	
 	    	int m=2;int n=3;int a=4;int b=9;int i=2;
 	    	float t=((float)m/n)*i*a;
 	    	
