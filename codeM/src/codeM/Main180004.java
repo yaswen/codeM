@@ -58,12 +58,30 @@ public class Main180004 {
         	for(int j=0;j<8;j++) {
         		pp[i][4]+=pp[i][3]*(pa[i][ag+j]*pp[ag+j][3]);
         	}
+        	
         	System.out.print(pp[i][4]);
         	if(i!=15) {
         		System.out.print(" ");
         	}
         }
-        
+        //测试用
+        /*
+        System.out.println();
+        System.out.println("晋级下一轮的概率：");
+        for(int i=0;i<16;i++) {
+        	System.out.print(pp[i][1]);
+        	if(i!=15) {
+        		System.out.print(" ");
+        	}
+        }
+        System.out.println();
+        System.out.println("晋级下二轮的概率：");
+        for(int i=0;i<16;i++) {
+        	System.out.print(pp[i][2]);
+        	if(i!=15) {
+        		System.out.print(" ");
+        	}
+        }*/
 	}
 	
 }
