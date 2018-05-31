@@ -1,6 +1,6 @@
 package codeM;
 
-<<<<<<< HEAD
+
 import java.util.Scanner;
 //小胖参加了人生中最重要的比赛——MedoC资格赛。MedoC的资格赛由m轮构成，使用常见的“加权标准分”的规则。每位选手需要参加所有的m轮的比赛。在一轮中，能取得的分数为自己的成绩除掉最高分的成绩。每个选手的总分为每一轮获得的分数乘上这一轮比赛占得比重。如果在某一轮比赛中所有人获得了零分，那么所有选手在这一轮获得的分数都为0分。
 //比如说，资格赛一共3轮，三轮的权重分别为30%, 30%, 40%。在第一轮中，小胖获得了300分，最高分也为300分。在第二轮中，小胖获得了0分，最高分也为0分。在第三轮中，小胖获得了150分，最高分为300分，那么小胖的总分为(300/300)*30%+0*30%+(150/300)*40%=0.5。
@@ -13,8 +13,8 @@ import java.util.Scanner;
 //接下来n行每行m个整数，第i个整数表示这个选手在第i场比赛中获得的成绩。如果这个数字为-1表示这个数据丢失，保证恰好有一个-1。
 //输出描述:
 //n行每行输出一个1到3之间的整数。1表示一定出线，2表示一定不出线，3表示可能出线。
-public class Main180006{
-=======
+
+
 import java.util.Arrays;
 import java.util.Map;
 import java.util.Scanner;
@@ -46,7 +46,7 @@ import java.util.TreeMap;
 //输出:
 //n行每行输出一个1到3之间的整数。1表示一定出线，2表示一定不出线，3表示可能出线。
 public class Main180006 {
->>>>>>> 5607048c85e78e3fe01aa57b25dd0705ee08f5cd
+
 	public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int n=in.nextInt();
@@ -54,27 +54,6 @@ public class Main180006 {
         int k=in.nextInt();
         int c=in.nextInt();
         int [] w=new int[m];
-<<<<<<< HEAD
-        for(int i=0;i<m;i++) {
-        	w[i]=in.nextInt();
-        }
-        int [][] score=new int[n][m];
-        int person1,game1;
-        for(int i=0;i<n;i++) {
-        	for(int j=0;j<m;j++) {
-        		score[i][j]=in.nextInt();
-        		if(score[i][j]==-1) {
-        			person1=i;
-        			game1=j;
-        		}
-        	}
-        }
-        //取到所有的输入值
-        
-        
-        
-        
-=======
         for(int i=0;i<m;i++){
         	w[i]=in.nextInt();
         }
@@ -184,7 +163,7 @@ public class Main180006 {
         		System.out.print(" ");
         	}
         }
->>>>>>> 5607048c85e78e3fe01aa57b25dd0705ee08f5cd
+
 	}
 	
 }
