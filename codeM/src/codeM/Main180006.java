@@ -72,6 +72,8 @@ public class Main180006 {
         //从0到c枚举
         
         //System.out.println("读取完毕！");
+        
+        
         for(int i=0;i<=c;i++){
         	
         	//先计算每轮比赛的最高分
@@ -84,7 +86,7 @@ public class Main180006 {
         	}
 //        	System.out.println("第1轮最高分:"+gameMaxScore[0]);
 //        	System.out.println("第2轮最高分:"+gameMaxScore[1]);
-//        	System.out.println(Arrays.toString(gameMaxScore));  
+        	//System.out.println("-1=："+i+"时 每轮最高分数："+Arrays.toString(gameMaxScore));  
         	//最大值求出
         	int [] personTotal=new int[n];//要求的当-1为i的时候每人总分
         	for(int p=0;p<n;p++){
@@ -92,16 +94,19 @@ public class Main180006 {
         		for (int lun=0;lun<m;lun++){
         			if(gameMaxScore[lun]!=0){
         				int scoreLun=score[p][lun]==-1?i:score[p][lun];
+//        				if(p==2) {System.out.println("第三人第"+lun+"轮成绩为"+scoreLun);}
         				for(int ga=0;ga<m;ga++){
         					if(ga!=lun && gameMaxScore[ga]!=0){
         						scoreLun*=gameMaxScore[ga];
         					}
+//        					if(p==2) {System.out.println("第三人总成绩为"+scoreLun);}
         				}
         				personTotal[p]+=scoreLun*w[lun];
         			}
         		}
         	}
         	//每个人总分求出
+        	//System.out.println("-1=："+i+"时 每个人的总分："+Arrays.toString(personTotal)); 
         	//排序
         	//寻找每个人的总分，比它大的有多少，和他登的有多少。据此判断谁是k。
         	int [] da=new int[n];
@@ -152,16 +157,12 @@ public class Main180006 {
         			break;
         		}
         	}
-        	
         }
         
         //System.out.println(Arrays.toString(result));
         
         for(int i=0;i<n;i++){
-        	System.out.print(result[i]);
-        	if(i!=n-1){
-        		System.out.print(" ");
-        	}
+        	System.out.println(result[i]);
         }
 
 	}
